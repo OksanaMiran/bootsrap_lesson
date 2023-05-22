@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/properties.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container position-fixed start-0 end-0 header">
+        <nav class="navbar navbar-expand-md p-4">
+            <a href="#" class="navbar-brand">
+                <svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.65328 4.30509H0V0H20.7089V4.30509H13.0556V22.9979C13.0556 23.4952 12.6525 23.8983 12.1552 23.8983C9.66887 23.8983 7.65328 21.8827 7.65328 19.3964V4.30509Z" fill="#605DEC"/>
+                    <path d="M32.3751 9.11491C32.4544 10.1933 31.6623 11.1395 30.5867 11.251L29.5739 11.3559C28.1195 11.4915 27.0921 11.8983 26.4919 12.5763C25.8916 13.2316 25.5915 14.113 25.5915 15.2203V22.8983C25.5915 23.4506 25.1438 23.8983 24.5915 23.8983H22.3623C21.2577 23.8983 20.3623 23.0029 20.3623 21.8983V8.25424C20.3623 7.70196 20.81 7.25424 21.3623 7.25424H24.3837C24.936 7.25424 25.3837 7.70195 25.3837 8.25424V10.0678C26.2379 8.14689 28.004 7.09605 30.6821 6.91526C31.5253 6.85898 32.2559 7.49377 32.3179 8.33656L32.3751 9.11491Z" fill="#605DEC"/>
+                    <path d="M34.2617 8.25424C34.2617 7.70196 34.7095 7.25424 35.2617 7.25424H38.4909C39.0432 7.25424 39.4909 7.70195 39.4909 8.25424V22.8983C39.4909 23.4506 39.0432 23.8983 38.4909 23.8983H36.2617C35.1572 23.8983 34.2617 23.0029 34.2617 21.8983V8.25424Z" fill="#605DEC"/>
+                    <path d="M54.0218 6.84746C55.4763 6.84746 56.7691 7.22034 57.9004 7.9661C59.0547 8.68926 59.9436 9.71751 60.5669 11.0508C61.2134 12.3616 61.5366 13.8757 61.5366 15.5932C61.5366 17.3107 61.2134 18.8249 60.5669 20.1356C59.9436 21.4237 59.0663 22.4181 57.935 23.1186C56.8038 23.8192 55.4994 24.1695 54.0218 24.1695C52.8675 24.1695 51.817 23.9435 50.8705 23.4915C49.947 23.017 49.2313 22.3616 48.7234 21.5254V29.1285C48.7234 29.6098 48.3332 30 47.8519 30C45.4452 30 43.4942 28.049 43.4942 25.6424V8.25424C43.4942 7.70195 43.9419 7.25424 44.4942 7.25424H47.6541C48.2064 7.25424 48.6541 7.70195 48.6541 8.25424V9.59322C49.162 8.73446 49.8893 8.0678 50.8358 7.59322C51.7824 7.09604 52.8444 6.84746 54.0218 6.84746ZM52.4981 20.2712C53.7217 20.2712 54.6682 19.8757 55.3378 19.0847C56.0073 18.2712 56.342 17.1073 56.342 15.5932C56.342 14.0565 56.0073 12.8701 55.3378 12.0339C54.6682 11.1751 53.7217 10.7458 52.4981 10.7458C51.2745 10.7458 50.3279 11.1638 49.6584 12C48.9889 12.8136 48.6541 13.9887 48.6541 15.5254C48.6541 17.0396 48.9889 18.2147 49.6584 19.0508C50.3279 19.8644 51.2745 20.2712 52.4981 20.2712Z" fill="#605DEC"/>
+                    <path d="M83.2787 6.84746C85.218 6.84746 86.6609 7.42373 87.6075 8.57627C88.5541 9.72882 89.0273 11.4915 89.0273 13.8644V21.8983C89.0273 23.0029 88.1319 23.8983 87.0273 23.8983H85.7982C84.6936 23.8983 83.7982 23.0029 83.7982 21.8983V14.0339C83.7982 12.904 83.6135 12.0904 83.2441 11.5932C82.8978 11.096 82.2975 10.8475 81.4433 10.8475C79.8206 10.8475 79.2539 12.3635 79.2539 14.7119V21.8983C79.2539 23.0029 78.3585 23.8983 77.2539 23.8983H76.0247C74.9202 23.8983 74.0247 23.0029 74.0247 21.8983V14.0339C74.0247 12.904 73.84 12.0904 73.4707 11.5932C73.1244 11.096 72.5241 10.8475 71.6699 10.8475C70.0472 10.8475 69.4805 12.3635 69.4805 14.7119V21.8983C69.4805 23.0029 68.5851 23.8983 67.4805 23.8983H66.2513C65.1468 23.8983 64.2513 23.0029 64.2513 21.8983V10.2542C64.2513 8.59739 65.5945 7.25424 67.2513 7.25424H68.342C68.8942 7.25424 69.342 7.70195 69.342 8.25424V9.49153C70.4865 7.64056 71.0013 6.84746 73.5745 6.84746C76.091 6.84746 77.7764 7.87571 78.6306 9.9322C79.8088 7.91394 80.5463 6.84746 83.2787 6.84746Z" fill="#605DEC"/>
+                    <path d="M99.5545 6.84746C102.094 6.84746 103.964 7.43503 105.165 8.61017C106.388 9.78531 107 11.6045 107 14.0678V21.3734C107 23.0302 105.657 24.3734 104 24.3734H102.048V21.4237C101.702 22.2825 101.124 22.9605 100.316 23.4576C99.5083 23.9322 98.5618 24.1695 97.4767 24.1695C96.3223 24.1695 95.2719 23.9435 94.3253 23.4915C93.4019 23.0396 92.6631 22.4068 92.109 21.5932C91.578 20.7797 91.3125 19.8757 91.3125 18.8814C91.3125 17.661 91.6242 16.7006 92.2475 16C92.894 15.2994 93.9213 14.791 95.3296 14.4746C96.7379 14.1582 98.6657 14 101.113 14H102.013V13.3898C102.013 12.3955 101.794 11.6949 101.355 11.2881C100.917 10.8814 100.155 10.678 99.0697 10.678C98.2386 10.678 97.3151 10.8249 96.2993 11.1186C95.9622 11.2161 95.6302 11.3261 95.3033 11.4484C94.2543 11.8411 93.0182 11.4193 92.5981 10.381C92.2563 9.53616 92.5752 8.55733 93.413 8.19849C94.0639 7.91966 94.7836 7.67271 95.572 7.45763C97.0034 7.05085 98.3309 6.84746 99.5545 6.84746ZM98.6195 20.6441C99.6353 20.6441 100.455 20.3164 101.078 19.661C101.702 18.9831 102.013 18.113 102.013 17.0508V16.4746H101.425C99.5545 16.4746 98.2385 16.6215 97.4767 16.9153C96.7379 17.209 96.3685 17.7401 96.3685 18.5085C96.3685 19.1186 96.5763 19.6271 96.9919 20.0339C97.4305 20.4407 97.9731 20.6441 98.6195 20.6441Z" fill="#605DEC"/>
+                    <path d="M39.5 3C39.5 4.38071 38.3807 5.5 37 5.5C35.6193 5.5 34.5 4.38071 34.5 3C34.5 1.61929 35.6193 0.5 37 0.5C38.3807 0.5 39.5 1.61929 39.5 3Z" fill="#605DEC"/>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-3 mt-md-0" id="navigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3">
+                        <a href="" class="nav-link active">Flights</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a href="" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a href="" class="nav-link">Packages</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a href="" class="nav-link">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="btn btn-primary py-2">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="hero-section position-relative">
+            <div class="position-absolute top-0 bottom-0 start-0 end-0 hero-background">
+                <img src="images/Hero.png" alt="Map">
+            </div>
+            <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="text-center w-100 m-5 hero-heading">It’s more than just a trip</h1>
+                <form action="#" class="row w-100">
+                    <div class="col-12 mb-2 position-relative col-md-6 col-lg-3 px-lg-0">
+                        <label for="hero-from" class="position-absolute icon-departure form-ico"></label>
+                        <input type="text" class="form-control ps-5" id="hero-from" placeholder="From where?">
+                    </div>
+                    <div class="col-12 mb-2 position-relative col-md-6 col-lg-3 px-lg-0">
+                        <label for="hero-to" class="position-absolute icon-arrival form-ico"></label>
+                        <input type="text" class="form-control ps-5" id="hero-to" placeholder="Where to?">
+                    </div>
+                    <div class="col-12 mb-2 position-relative col-md-6 col-lg-3 px-lg-0">
+                        <label for="hero-when" class="position-absolute icon-calendar-with-dates form-ico"></label>
+                        <input type="text" class="form-control ps-5" id="hero-when" placeholder="Depart - Return">
+                    </div>
+                    <div class="col-12 position-relative col-md-6 col-lg-2 px-lg-0">
+                        <label for="hero-how-many" class="position-absolute icon-person-solid form-ico"></label>
+                        <input type="text" class="form-control ps-5" id="hero-how-many" placeholder="1 adult">
+                    </div>
+                    <div class="col-12 w-50 mx-auto mt-3 col-lg-1 px-lg-0">
+                        <input type="submit" class="btn btn-primary w-100" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <h2 class="col-9 fs-5 mb-0">Find your next adventure with these <span class="purple-text">flight deals</span></h2>
+                <div class="col-3">
+                    <button class="fs-5 watch-all">All 
+                        <span class="icon-arrow" style="font-size: 1.1rem;"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row card-container justify-content-center">
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card-holder">
+                        <div class="image-holder">
+                            <img src="images/image1.jpg" alt="image" class="rounded-top">
+                        </div>
+                        <div class="px-3 pb-1 pt-3 rounded-bottom card-text">
+                            <div class="d-flex mb-1">
+                                <h3 class="mb-0 me-1">The Bund, <span class="purple-text">Shanghai</span></h3>
+                                <span class="ms-auto price">598</span>
+                            </div>
+                            <p>China’s most international city</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card-holder">
+                        <div class="image-holder">
+                            <img src="images/image2.jpg" alt="image" class="rounded-top">
+                        </div>
+                        <div class="px-3 pb-1 pt-3 rounded-bottom card-text">
+                            <div class="d-flex mb-1">
+                                <h3 class="mb-0 me-1">Sydney Opera House, <span class="purple-text">Sydney</span></h3>
+                                <span class="ms-auto price">981</span>
+                            </div>
+                            <p>Take a stroll along the famous harbor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card-holder">
+                        <div class="image-holder">
+                            <img src="images/image3.jpg" alt="image" class="rounded-top">
+                        </div>
+                        <div class="px-3 pb-1 pt-3 rounded-bottom card-text">
+                            <div class="d-flex mb-1">
+                                <h3 class="mb-0 me-1">Kōdaiji Temple, <span class="purple-text">Kyoto</span></h3>
+                                <span class="ms-auto price">633</span>
+                            </div>
+                            <p>Step back in time in the Gion district</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="card-holder">
+                        <div class="image-holder">
+                            <img src="images/image4.jpg" alt="image" class="rounded-top">
+                        </div>
+                        <div class="px-3 pb-1 pt-3 rounded-bottom card-text">
+                            <div class="d-flex mb-1">
+                                <h3 class="mb-0 me-1">Tsavo East National Park, <span class="purple-text">Kenya</span></h3>
+                                <span class="ms-auto price">1,248</span>
+                            </div>
+                            <p>Named after the Tsavo River, and opened in April 1984, Tsavo East National Park is one of the oldest parks in Kenya. It is located in the semi-arid Taru Desert.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <h2 class="col-9 fs-5 mb-0">Explore unique <span class="mint-text">places to stay</span></h2>
+                <div class="col-3">
+                    <button class="fs-5 watch-all">All 
+                        <span class="icon-arrow" style="font-size: 1.1rem;"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row card-container justify-content-center">
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card-holder">
+                        <div class="image-holder">
+                            <img src="images/image5.jpg" alt="image" class="rounded-top">
+                        </div>
+                        <div class="px-3 pb-1 pt-3 rounded-bottom card-text">
+                            <div class="mb-1">
+                                <h3 class="mb-0">Stay among the atolls in <span class="mint-text">Maldives</span></h3>
+                            </div>
+                            <p>From the 2nd century AD, the islands were known as the 'Money Isles' due to the abundance of cowry shells, a currency of the early ages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card-holder">
+                        <div class="image-holder">
+                            <img src="images/image6.jpg" alt="image" class="rounded-top">
+                        </div>
+                        <div class="px-3 pb-1 pt-3 rounded-bottom card-text">
+                            <div class="mb-1">
+                                <h3 class="mb-0">Experience the Ourika Valley in <span class="mint-text">Morocco</span></h3>
+                            </div>
+                            <p>Morocco’s Hispano-Moorish architecture blends influences from Berber culture, Spain, and contemporary artistic currents in the Middle East.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card-holder">
+                        <div class="image-holder">
+                            <img src="images/image7.jpg" alt="image" class="rounded-top">
+                        </div>
+                        <div class="px-3 pb-1 pt-3 rounded-bottom card-text">
+                            <div class="mb-1">
+                                <h3 class="mb-0">Live traditionally in <span class="mint-text">Mongolia</span></h3>
+                            </div>
+                            <p>Traditional Mongolian yurts consists of an angled latticework of wood or bamboo for walls, ribs, and a wheel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <a href="#" class="btn btn-primary px-4 py-2 mb-5">Explore more stays</a>
+        </div>
+        <div class="container comment-container mb-5">
+            <h2 class="fw-bold mb-4">What <span class="purple-text">Tripma</span> users are saying</h2>
+            <div class="row">
+                <div class="py-3 mb-3">
+                    <div class="comment-photo me-3 mb-3 float-start">
+                        <img src="images/avatar (1).png" alt="photo">
+                    </div>
+                    <div class="text-holder">
+                        <span class="d-block">Yifei Chen</span>
+                        <span class="d-block lightgrey-text">Seoul, South Korea | April 2019</span>
+                        <div class="my-2 stars">
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                        </div>
+                        <p class="mb-0 darkgrey-text">What a great experience using Tripma! I booked all of my flights for my gap year through Tripma and never had any issues. When I had to cancel a flight because of an emergency, Tripma support helped me <a href="#" class="purple-text">read more...</a></p>
+                    </div>
+                </div>
+                <div class="py-3 mb-3">
+                    <div class="comment-photo me-3 mb-3 float-start">
+                        <img src="images/avatar (2).png" alt="photo">
+                    </div>
+                    <div class="text-holder">
+                        <span class="d-block">Kaori Yamaguchi</span>
+                        <span class="d-block lightgrey-text">Honolulu, Hawaii | February 2017</span>
+                        <div class="my-2 stars">
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star star-nofill"></span>
+                        </div>
+                        <p class="mb-0 darkgrey-text">My family and I visit Hawaii every year, and we usually book our flights using other services. Tripma was recommened to us by a long time friend, and I’m so glad we tried it out! The process was easy and <a href="#" class="purple-text">read more...</a></p>
+                    </div>
+                </div>
+                <div class="py-3">
+                    <div class="comment-photo me-3 mb-3 float-start">
+                        <img src="images/avatar (3).png" alt="photo">
+                    </div>
+                    <div class="text-holder">
+                        <span class="d-block">Anthony Lewis</span>
+                        <span class="d-block lightgrey-text">Berlin, Germany | April 2019</span>
+                        <div class="my-2 stars">
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                            <span class="d-inline-block star"></span>
+                        </div>
+                        <p class="mb-0 darkgrey-text">When I was looking to book my flight to Berlin from LAX, Tripma had the best browsing experiece so I figured I’d give it a try. It was my first time using Tripma, but I’d definitely recommend it to a friend and use it for <a href="#" class="purple-text">read more...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="container mb-5">
+            <div class="logo mb-4">
+                <a href="#" class="navbar-brand">
+                    <svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.65328 4.30509H0V0H20.7089V4.30509H13.0556V22.9979C13.0556 23.4952 12.6525 23.8983 12.1552 23.8983C9.66887 23.8983 7.65328 21.8827 7.65328 19.3964V4.30509Z" fill="#605DEC"/>
+                        <path d="M32.3751 9.11491C32.4544 10.1933 31.6623 11.1395 30.5867 11.251L29.5739 11.3559C28.1195 11.4915 27.0921 11.8983 26.4919 12.5763C25.8916 13.2316 25.5915 14.113 25.5915 15.2203V22.8983C25.5915 23.4506 25.1438 23.8983 24.5915 23.8983H22.3623C21.2577 23.8983 20.3623 23.0029 20.3623 21.8983V8.25424C20.3623 7.70196 20.81 7.25424 21.3623 7.25424H24.3837C24.936 7.25424 25.3837 7.70195 25.3837 8.25424V10.0678C26.2379 8.14689 28.004 7.09605 30.6821 6.91526C31.5253 6.85898 32.2559 7.49377 32.3179 8.33656L32.3751 9.11491Z" fill="#605DEC"/>
+                        <path d="M34.2617 8.25424C34.2617 7.70196 34.7095 7.25424 35.2617 7.25424H38.4909C39.0432 7.25424 39.4909 7.70195 39.4909 8.25424V22.8983C39.4909 23.4506 39.0432 23.8983 38.4909 23.8983H36.2617C35.1572 23.8983 34.2617 23.0029 34.2617 21.8983V8.25424Z" fill="#605DEC"/>
+                        <path d="M54.0218 6.84746C55.4763 6.84746 56.7691 7.22034 57.9004 7.9661C59.0547 8.68926 59.9436 9.71751 60.5669 11.0508C61.2134 12.3616 61.5366 13.8757 61.5366 15.5932C61.5366 17.3107 61.2134 18.8249 60.5669 20.1356C59.9436 21.4237 59.0663 22.4181 57.935 23.1186C56.8038 23.8192 55.4994 24.1695 54.0218 24.1695C52.8675 24.1695 51.817 23.9435 50.8705 23.4915C49.947 23.017 49.2313 22.3616 48.7234 21.5254V29.1285C48.7234 29.6098 48.3332 30 47.8519 30C45.4452 30 43.4942 28.049 43.4942 25.6424V8.25424C43.4942 7.70195 43.9419 7.25424 44.4942 7.25424H47.6541C48.2064 7.25424 48.6541 7.70195 48.6541 8.25424V9.59322C49.162 8.73446 49.8893 8.0678 50.8358 7.59322C51.7824 7.09604 52.8444 6.84746 54.0218 6.84746ZM52.4981 20.2712C53.7217 20.2712 54.6682 19.8757 55.3378 19.0847C56.0073 18.2712 56.342 17.1073 56.342 15.5932C56.342 14.0565 56.0073 12.8701 55.3378 12.0339C54.6682 11.1751 53.7217 10.7458 52.4981 10.7458C51.2745 10.7458 50.3279 11.1638 49.6584 12C48.9889 12.8136 48.6541 13.9887 48.6541 15.5254C48.6541 17.0396 48.9889 18.2147 49.6584 19.0508C50.3279 19.8644 51.2745 20.2712 52.4981 20.2712Z" fill="#605DEC"/>
+                        <path d="M83.2787 6.84746C85.218 6.84746 86.6609 7.42373 87.6075 8.57627C88.5541 9.72882 89.0273 11.4915 89.0273 13.8644V21.8983C89.0273 23.0029 88.1319 23.8983 87.0273 23.8983H85.7982C84.6936 23.8983 83.7982 23.0029 83.7982 21.8983V14.0339C83.7982 12.904 83.6135 12.0904 83.2441 11.5932C82.8978 11.096 82.2975 10.8475 81.4433 10.8475C79.8206 10.8475 79.2539 12.3635 79.2539 14.7119V21.8983C79.2539 23.0029 78.3585 23.8983 77.2539 23.8983H76.0247C74.9202 23.8983 74.0247 23.0029 74.0247 21.8983V14.0339C74.0247 12.904 73.84 12.0904 73.4707 11.5932C73.1244 11.096 72.5241 10.8475 71.6699 10.8475C70.0472 10.8475 69.4805 12.3635 69.4805 14.7119V21.8983C69.4805 23.0029 68.5851 23.8983 67.4805 23.8983H66.2513C65.1468 23.8983 64.2513 23.0029 64.2513 21.8983V10.2542C64.2513 8.59739 65.5945 7.25424 67.2513 7.25424H68.342C68.8942 7.25424 69.342 7.70195 69.342 8.25424V9.49153C70.4865 7.64056 71.0013 6.84746 73.5745 6.84746C76.091 6.84746 77.7764 7.87571 78.6306 9.9322C79.8088 7.91394 80.5463 6.84746 83.2787 6.84746Z" fill="#605DEC"/>
+                        <path d="M99.5545 6.84746C102.094 6.84746 103.964 7.43503 105.165 8.61017C106.388 9.78531 107 11.6045 107 14.0678V21.3734C107 23.0302 105.657 24.3734 104 24.3734H102.048V21.4237C101.702 22.2825 101.124 22.9605 100.316 23.4576C99.5083 23.9322 98.5618 24.1695 97.4767 24.1695C96.3223 24.1695 95.2719 23.9435 94.3253 23.4915C93.4019 23.0396 92.6631 22.4068 92.109 21.5932C91.578 20.7797 91.3125 19.8757 91.3125 18.8814C91.3125 17.661 91.6242 16.7006 92.2475 16C92.894 15.2994 93.9213 14.791 95.3296 14.4746C96.7379 14.1582 98.6657 14 101.113 14H102.013V13.3898C102.013 12.3955 101.794 11.6949 101.355 11.2881C100.917 10.8814 100.155 10.678 99.0697 10.678C98.2386 10.678 97.3151 10.8249 96.2993 11.1186C95.9622 11.2161 95.6302 11.3261 95.3033 11.4484C94.2543 11.8411 93.0182 11.4193 92.5981 10.381C92.2563 9.53616 92.5752 8.55733 93.413 8.19849C94.0639 7.91966 94.7836 7.67271 95.572 7.45763C97.0034 7.05085 98.3309 6.84746 99.5545 6.84746ZM98.6195 20.6441C99.6353 20.6441 100.455 20.3164 101.078 19.661C101.702 18.9831 102.013 18.113 102.013 17.0508V16.4746H101.425C99.5545 16.4746 98.2385 16.6215 97.4767 16.9153C96.7379 17.209 96.3685 17.7401 96.3685 18.5085C96.3685 19.1186 96.5763 19.6271 96.9919 20.0339C97.4305 20.4407 97.9731 20.6441 98.6195 20.6441Z" fill="#605DEC"/>
+                        <path d="M39.5 3C39.5 4.38071 38.3807 5.5 37 5.5C35.6193 5.5 34.5 4.38071 34.5 3C34.5 1.61929 35.6193 0.5 37 0.5C38.3807 0.5 39.5 1.61929 39.5 3Z" fill="#605DEC"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-12 mb-3">
+                <h3 class="fw-bold mb-3 fs-1-1 maingrey-text" data-bs-toggle="collapse" data-bs-target="#collapse-about" aria-expanded="false" aria-controls="collapse-about">About</h3>
+                <ul class="collapse navbar-nav" id="collapse-about">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">About Tripma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Press</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0">Forum</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 mb-3">
+                <h3 class="fw-bold mb-3 fs-1-1 maingrey-text" data-bs-toggle="collapse" data-bs-target="#collapse-partner" aria-expanded="false" aria-controls="collapse-partner">Partner with us</h3>
+                <ul class="collapse navbar-nav" id="collapse-partner">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Partnership programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Affiliate program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Connectivity partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Promotions and events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Integrations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0">Loyalty program</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 mb-3">
+                <h3 class="fw-bold mb-3 fs-1-1 maingrey-text" data-bs-toggle="collapse" data-bs-target="#collapse-support" aria-expanded="false" aria-controls="collapse-support">Support</h3>
+                <ul class="collapse navbar-nav" id="collapse-support">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Help Center</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Privacy policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Terms of service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Trust and safety</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0">Accessibility</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 mb-3">
+                <h3 class="fw-bold mb-3 fs-1-1 maingrey-text" data-bs-toggle="collapse" data-bs-target="#collapse-app" aria-expanded="false" aria-controls="collapse-app">Get the app</h3>
+                <ul class="collapse navbar-nav" id="collapse-app">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Tripma for Android</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-2">Tripma for iOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-3">Mobile site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0 mb-3"><img class="footer-app" src="images/app store.png" alt="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-0"><img class="footer-app" src="images/google play.png" alt="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="border-top">
+            <div class="container py-4 d-flex align-items-center">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item me-2">
+                        <a href="" class="nav-link icon-twitter fs-5"></a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a href="" class="nav-link icon-instagram fs-5"></a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a href="" class="nav-link icon-facebook fs-5"></a>
+                    </li>
+                </ul>
+                <span class="ms-auto">© 2020 Tripma incorporated</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
