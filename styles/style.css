@@ -23,7 +23,6 @@ a {
 
 .header {
     background-color: #fff;
-    z-index: 999;
     top: 0;
 }
 
@@ -108,7 +107,7 @@ a {
     height: 397px;
 }
 
-.card-text {
+.card-holder {
     box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
 }
 
@@ -146,4 +145,42 @@ a {
 .footer-app {
     width: 135px;
     height: 40px;
+}
+
+@media (min-width: 992px) {
+    .input-where,
+    .input-to,
+    .input-date {
+        border-right: none;
+    }
+
+    .input-where {
+        border-radius: var(--bs-border-radius) 0 0 var(--bs-border-radius);
+    }
+
+    .input-to {
+        border-radius: 0 0 0 0;
+    }
+
+    .input-date { 
+        border-radius: 0 0 0 0;
+    }
+
+    .input-person {
+        border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-section {
+        height: 700px;
+    }
+    .input-person {
+        border-right: 0;
+        border-radius: 0 0 0 0;
+    }
+    
+    .input-search {
+        border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0;
+    }
 }
