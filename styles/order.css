@@ -1,0 +1,78 @@
+.main {
+    margin-top: 152px;
+}
+
+.date-type {
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.passenger-form {
+    margin-bottom: 150px;
+}
+
+.passenger-form h2 {
+    font-size: 18px;
+    color: #6E7491;
+}
+
+.passanger-name, 
+.passanger-bags {
+    color: #6E7491;
+}
+
+.button-bags {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #FAFAFA;
+    border: none;
+    border-radius: 2px;
+}
+
+.button-bags::before {
+    content: "";
+    display: block;
+    width: 16px;
+    border: 1px solid #605DEC;
+    margin: 0 auto;
+}
+
+.button-plus::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    display: block;
+    height: 16px;
+    border-left: 2px solid #605DEC;
+}
+
+.btn-inverse {
+    background-color: #fff;
+    color: #605DEC;
+}
+
+.order-info {
+    margin-bottom: 100px;
+}
+
+.order-data {
+    max-width: 400px;
+}
+
+.order-info .image-holder {
+    width: 40px;
+    height: 40px;
+}
+
+.order-info .info-main {
+    color: #27273F;
+}
+
+.order-img {
+    max-width: 382px;
+}

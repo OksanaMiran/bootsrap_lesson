@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/order.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/properties.css">
     <title>Order</title>
 </head>
 <body>
     <header class="w-100 z-3 position-fixed header">
-        <div class="container mx-auto">
+        <div class="container-fluid mx-auto">
             <nav class="navbar navbar-expand-md p-4">
                 <a href="#" class="navbar-brand">
                     <svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +32,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse mt-3 mt-md-0" id="navigation">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto align-items-start">
                         <li class="nav-item me-3">
                             <a href="" class="nav-link active">Flights</a>
                         </li>
@@ -45,7 +46,7 @@
                             <a href="" class="nav-link">Sign in</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="btn btn-primary py-2">Sign up</a>
+                            <a href="" class="btn py-2">Sign up</a>
                         </li>
                     </ul>
                 </div>
@@ -54,109 +55,134 @@
     </header>
     <main class="main">
         <div class="container">
-            <div class="row">
-                <div class="col-7">
-                    <h1>Passenger information</h1>
-                    <p>Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</p>
-                </div>
+            <div class="mb-5">
+                <h1 class="fs-4 purple-text fw-bold">Passenger information</h1>
+                <p>Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</p>
             </div>
             <div>
-                <form action="#">
-                    <div>
-                        <h2>Passenger 1 (Adult)</h2>
-                        <div>
-                            <input type="text" name="first-name" id="first-name" placeholder="First name*">
-                            <input type="text" name="middle" id="middle" placeholder="Middle">
-                            <input type="text" name="last-name" id="last-name" placeholder="Last name*">
-                            <input type="text" name="suffix" id="suffix" placeholder="Suffix">
-                            <label for="bitrh">
-                                <input type="date" name="bitrh" id="bitrh" placeholder="Date of birth*">
-                                <span>MM/DD/YY</span>
+                <form action="#" class="passenger-form">
+                    <div class="mb-5">
+                        <h2 class="fw-semibold mb-4">Passenger 1 (Adult)</h2>
+                        <div class="row">
+                            <label for="first-name" class="mb-3 col-12 col-md-6">
+                                <input type="text" name="first-name" id="first-name" placeholder="First name*" class="form-control py-2">
+                            </label>
+                            <label for="middle" class="mb-3 col-12 col-md-6">
+                                <input type="text" name="middle" id="middle" placeholder="Middle" class="form-control py-2">
+                            </label>
+                            <label for="last-name" class="mb-3 col-12 col-md-6">
+                                <input type="text" name="last-name" id="last-name" placeholder="Last name*" class="form-control py-2">
+                            </label>
+                            <label for="suffix" class="mb-3 col-12 col-md-6">
+                                <input type="text" name="suffix" id="suffix" placeholder="Suffix" class="form-control py-2">
+                            </label>
+                            <label for="bitrh" class="mb-3 col-12 col-md-6">
+                                <input type="date" name="bitrh" id="bitrh" placeholder="Date of birth*" class="form-control py-2">
+                                <span class="ms-1 date-type">MM/DD/YY</span>
                             </label>
                         </div>
-                        <div>
-                            <input type="email" name="mail" id="mail" placeholder="Email address*">
-                            <input type="tel" name="tel" id="tel" placeholder="Phone number*">
-                            <input type="number" name="redress" id="redress" placeholder="Redress number">
-                            <input type="number" name="treveler-number" id="treveler-number" placeholder="Known traveller number*">
+                        <div class="row">
+                            <label for="mail" class="mb-3 col-12 col-md-">
+                                <input type="email" name="mail" id="mail" placeholder="Email address*" class="form-control py-2">
+                            </label>
+                            <label for="tel" class="mb-3 col-12 col-md-">
+                                <input type="tel" name="tel" id="tel" placeholder="Phone number*" class="form-control py-2">
+                            </label>
+                            <label for="redress" class="mb-3 col-12 col-md-">
+                                <input type="number" name="redress" id="redress" placeholder="Redress number" class="form-control py-2"></label>
+                            <label for="treveler-number" class="mb-3 col-12 col-md-">
+                                <input type="number" name="treveler-number" id="treveler-number" placeholder="Known traveller number*" class="form-control py-2"></label>
                         </div>
                     </div>
-                    <div>
-                        <h2>Emergency contact information</h2>
-                        <div>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">Same as Passenger 1</label>
-                            <input type="text" name="emergency-first-name" id="emergency-first-name" placeholder="First name*">
-                            <input type="text" name="emergency-last-name" id="emergency-last-name" placeholder="Last name*">
-                            <input type="text" name="emergency-mail" id="emergency-mail" placeholder="Email address*">
-                            <input type="text" name="emergency-tel" id="emergency-tel" placeholder="Phone number*">
+                    <div class="mb-5">
+                        <h2 class="fw-semibold mb-4">Emergency contact information</h2>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label mb-3" for="flexCheckDefault">Same as Passenger 1</label>
+                        <div class="row">
+                            <label for="" class="mb-3 col-12 col-md-6">
+                                <input type="text" name="emergency-first-name" id="emergency-first-name" placeholder="First name*" class="form-control py-2">
+                            </label>
+                            <label for="" class="mb-3 col-12 col-md-6">
+                                <input type="text" name="emergency-last-name" id="emergency-last-name" placeholder="Last name*" class="form-control py-2">
+                            </label>
+                            <label for="" class="mb-3 col-12 col-md-6">
+                                <input type="text" name="emergency-mail" id="emergency-mail" placeholder="Email address*" class="form-control py-2">
+                            </label>
+                            <label for="" class="mb-3 col-12 col-md-6">
+                                <input type="text" name="emergency-tel" id="emergency-tel" placeholder="Phone number*" class="form-control py-2"></label>
                         </div>
                     </div>
-                    <div>
-                        <h2>Bag information</h2>
-                        <p>Each passenger is allowed one free carry-on bag and one personal item. First checked bag for each passenger is also free. Second bag check fees are waived for loyalty program members. See the full bag policy.</p>
-                        <div>
-                            <div>
-                                <span>Passenger 1</span>
-                                <span>First Last</span>
+                    <div class="mb-5">
+                        <h2 class="fw-semibold mb-4">Bag information</h2>
+                        <p class="mb-3">Each passenger is allowed one free carry-on bag and one personal item. First checked bag for each passenger is also free. Second bag check fees are waived for loyalty program members. See the full bag policy.</p>
+                        <div class="d-flex flex-wrap align-items-center">
+                            <span class="w-50 d-block mb-2">Passenger 1</span>
+                            <span class="w-50 d-block mb-2">Checked bags</span>
+                            <span class="w-50 d-block fw-semibold passanger-name">First Last</span>
+                            <div class="w-50 d-flex align-items-center">
+                                <button class="button-bags"></button>
+                                <span class="px-4 fw-semibold passanger-bags">1</span>
+                                <button class="button-bags button-plus"></button>
                             </div>
-                            <div>
-                                <span>Checked bags</span>
-                                <div>
-                                    <button></button>
-                                    <span></span>
-                                    <button></button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div>
-                        <input type="submit" value="Save and close">
-                        <button>Save and close</button>
+                        <input type="submit" value="Save and close" class="btn me-3 py-2 px-3 btn-inverse">
+                        <button disabled class="btn py-2 px-3">Select seats</button>
                     </div>
                 </form>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <img src="images/havaii-air.png" alt="">
+                <div class="order-info">
+                    <div class="border rounded-4 px-3 py-4 mb-4 ms-auto order-data">
+                        <div class="border-bottom pb-4 d-flex justify-content-between">
+                            <div class="d-flex flex-nowrap">
+                                <div class="image-holder me-2">
+                                    <img src="images/havaii-air.png" alt="">
+                                </div>
                                 <div>
-                                    <span>Hawaiian Airlines</span>
-                                    <span>FIG4312</span>
+                                    <span class="d-block info-main">Hawaiian Airlines</span>
+                                    <span class="d-block">FIG4312</span>
                                 </div>
                             </div>
-                            <div>
-                                <span>16h 45m (+1d)</span>
-                                <span>7:00 AM - 4:15 PM</span>
-                                <span>2h 45m in HNL</span>
+                            <div class="text-end w-50">
+                                <span class="d-block info-main">16h 45m (+1d)</span>
+                                <span class="d-block info-main">7:00 AM - 4:15 PM</span>
+                                <span class="d-block">2h 45m in HNL</span>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <img src="images/havaii-air.png" alt="">
+                        <div class="pt-3 d-flex justify-content-between">
+                            <div class="d-flex flex-nowrap">
+                                <div class="image-holder me-2">
+                                    <img src="images/havaii-air.png" alt="">
+                                </div>
                                 <div>
-                                    <span>Hawaiian Airlines</span>
-                                    <span>FIG4312</span>
+                                    <span class="d-block info-main">Hawaiian Airlines</span>
+                                    <span class="d-block">FIG4312</span>
                                 </div>
                             </div>
-                            <div>
-                                <span>16h 45m (+1d)</span>
-                                <span>7:00 AM - 4:15 PM</span>
-                                <span>2h 45m in HNL</span>
+                            <div class="text-end w-50">
+                                <span class="d-block info-main">16h 45m (+1d)</span>
+                                <span class="d-block info-main">7:00 AM - 4:15 PM</span>
+                                <span class="d-block">2h 45m in HNL</span>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <span>Subtotal</span>
-                        <span>$503</span>
-                        <span>Taxes and Fees</span>
-                        <span>$121</span>
-                        <span>Total</span>
-                        <span>$624</span>
+                    <div class="d-flex justify-content-end me-2 mb-5">
+                        <div class="text-end">
+                            <span class="d-block fw-semibold mb-1 info-main">Subtotal</span>
+                            <span class="d-block fw-semibold mb-1 info-main">Taxes and Fees</span>
+                            <span class="d-block fw-semibold info-main">Total</span>
+                        </div>
+                        <div class="text-end ms-5">
+                            <span class="d-block fw-semibold mb-1 info-main">$503</span>
+                            <span class="d-block fw-semibold mb-1 info-main">$121</span>
+                            <span class="d-block fw-semibold info-main">$624</span>
+                        </div>
                     </div>
-                    <div>
+                    <div class="text-end mb-5">
+                        <button disabled class="btn py-2 px-3">Select seats</button>
+                    </div>
+                    <div class="order-img mx-auto">
                         <img src="images/Illustration with text.png" alt="">
-                        <span>*Dimensions include handles and wheels</span>
                     </div>
                 </div>
             </div>

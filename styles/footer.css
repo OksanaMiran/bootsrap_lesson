@@ -1,0 +1,14 @@
+.footer-app {
+    width: 135px;
+    height: 40px;
+}
+
+
+@media (min-width: 992px) {
+    .collapse {
+        display: block !important;
+    }
+    .footer h3 {
+        font-size: 18px;
+    }
+}

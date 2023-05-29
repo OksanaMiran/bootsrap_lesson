@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/properties.css">
     <title>Tripma</title>
 </head>
 <body>
     <header class="w-100 z-3 position-fixed header">
-        <div class="container mx-auto">
+        <div class="container-fluid mx-auto">
             <nav class="navbar navbar-expand-md p-4">
                 <a href="#" class="navbar-brand">
                     <svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +32,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse mt-3 mt-md-0" id="navigation">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto align-items-start">
                         <li class="nav-item me-3">
                             <a href="" class="nav-link active">Flights</a>
                         </li>
@@ -44,7 +46,7 @@
                             <a href="" class="nav-link">Sign in</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="btn btn-primary py-2">Sign up</a>
+                            <a href="" class="btn py-2">Sign up</a>
                         </li>
                     </ul>
                 </div>
@@ -61,22 +63,22 @@
                 <form action="#" class="row justify-content-lg-center">
                     <div class="col-12 mb-2 position-relative col-md-6 col-lg-3 px-lg-0 mb-lg-0">
                         <label for="hero-from" class="position-absolute icon-departure form-ico"></label>
-                        <input type="text" class="form-control ps-5 input-where" id="hero-from" placeholder="From where?">
+                        <input type="text" class="form-control ps-5 py-2 input-where" id="hero-from" placeholder="From where?">
                     </div>
                     <div class="col-12 mb-2 position-relative col-md-6 col-lg-3 px-lg-0 mb-lg-0">
                         <label for="hero-to" class="position-absolute icon-arrival form-ico"></label>
-                        <input type="text" class="form-control ps-5 input-to" id="hero-to" placeholder="Where to?">
+                        <input type="text" class="form-control ps-5 py-2 input-to" id="hero-to" placeholder="Where to?">
                     </div>
                     <div class="col-12 mb-2 position-relative col-md-6 col-lg-3 px-lg-0 mb-lg-0">
                         <label for="hero-when" class="position-absolute icon-calendar-with-dates form-ico"></label>
-                        <input type="text" class="form-control ps-5 input-date" id="hero-when" placeholder="Depart - Return">
+                        <input type="date" class="form-control ps-5 py-2 input-date" id="hero-when" placeholder="Depart - Return">
                     </div>
                     <div class="col-12 position-relative col-md-6 col-lg-2 px-lg-0 mb-lg-0">
                         <label for="hero-how-many" class="position-absolute icon-person-solid form-ico"></label>
-                        <input type="text" class="form-control ps-5 input-person" id="hero-how-many" placeholder="1 adult">
+                        <input type="text" class="form-control ps-5 py-2 input-person" id="hero-how-many" placeholder="1 adult">
                     </div>
                     <div class="col-12 col-xl-1 mt-3 mt-xl-0 text-center px-lg-0 mb-lg-0">
-                        <input type="submit" class="btn btn-primary col-12 col-md-6 col-xl-12 input-search" value="Search">
+                        <input type="submit" class="btn h-100 col-12 col-md-6 col-xl-12 input-search" value="Search">
                     </div>
                 </form>
             </div>
@@ -201,18 +203,18 @@
             </div>
         </div>
         <div class="container text-center cards-wrapper">
-            <a href="#" class="btn btn-primary px-4 py-2">Explore more stays</a>
+            <a href="#" class="btn px-4 py-2">Explore more stays</a>
         </div>
         <div class="container comment-container">
-            <h2 class="fw-bold mb-4">What <span class="purple-text">Tripma</span> users are saying</h2>
+            <h2 class="mb-4 text-center fw-bold">What <span class="purple-text">Tripma</span> users are saying</h2>
             <div class="row">
                 <div class="py-3 mb-3 col-lg-4 d-lg-flex flex-nowrap">
-                    <div class="comment-photo me-3 mb-3 float-start float-lg-none">
+                    <div class="image-holder me-3 mb-3 float-start float-lg-none">
                         <img src="images/avatar (1).png" alt="photo">
                     </div>
                     <div class="text-holder">
-                        <span class="d-block">Yifei Chen</span>
-                        <span class="d-block lightgrey-text">Seoul, South Korea | April 2019</span>
+                        <span class="d-block fw-semibold">Yifei Chen</span>
+                        <span class="d-block">Seoul, South Korea | April 2019</span>
                         <div class="my-2 stars">
                             <span class="d-inline-block star"></span>
                             <span class="d-inline-block star"></span>
@@ -220,16 +222,16 @@
                             <span class="d-inline-block star"></span>
                             <span class="d-inline-block star"></span>
                         </div>
-                        <p class="mb-0 darkgrey-text">What a great experience using Tripma! I booked all of my flights for my gap year through Tripma and never had any issues. When I had to cancel a flight because of an emergency, Tripma support helped me <a href="#" class="purple-text">read more...</a></p>
+                        <p class="mb-0 ">What a great experience using Tripma! I booked all of my flights for my gap year through Tripma and never had any issues. When I had to cancel a flight because of an emergency, Tripma support helped me <a href="#" class="purple-text">read more...</a></p>
                     </div>
                 </div>
                 <div class="py-3 mb-3 col-lg-4 d-lg-flex flex-nowrap">
-                    <div class="comment-photo me-3 mb-3 float-start float-lg-none">
+                    <div class="image-holder me-3 mb-3 float-start float-lg-none">
                         <img src="images/avatar (2).png" alt="photo">
                     </div>
                     <div class="text-holder">
-                        <span class="d-block">Kaori Yamaguchi</span>
-                        <span class="d-block lightgrey-text">Honolulu, Hawaii | February 2017</span>
+                        <span class="d-block fw-semibold">Kaori Yamaguchi</span>
+                        <span class="d-block">Honolulu, Hawaii | February 2017</span>
                         <div class="my-2 stars">
                             <span class="d-inline-block star"></span>
                             <span class="d-inline-block star"></span>
@@ -237,16 +239,16 @@
                             <span class="d-inline-block star"></span>
                             <span class="d-inline-block star star-nofill"></span>
                         </div>
-                        <p class="mb-0 darkgrey-text">My family and I visit Hawaii every year, and we usually book our flights using other services. Tripma was recommened to us by a long time friend, and I’m so glad we tried it out! The process was easy and <a href="#" class="purple-text">read more...</a></p>
+                        <p class="mb-0 ">My family and I visit Hawaii every year, and we usually book our flights using other services. Tripma was recommened to us by a long time friend, and I’m so glad we tried it out! The process was easy and <a href="#" class="purple-text">read more...</a></p>
                     </div>
                 </div>
                 <div class="py-3 col-lg-4 d-lg-flex flex-nowrap">
-                    <div class="comment-photo me-3 mb-3 float-start float-lg-none">
+                    <div class="image-holder me-3 mb-3 float-start float-lg-none">
                         <img src="images/avatar (3).png" alt="photo">
                     </div>
                     <div class="text-holder">
-                        <span class="d-block">Anthony Lewis</span>
-                        <span class="d-block lightgrey-text">Berlin, Germany | April 2019</span>
+                        <span class="d-block fw-semibold">Anthony Lewis</span>
+                        <span class="d-block">Berlin, Germany | April 2019</span>
                         <div class="my-2 stars">
                             <span class="d-inline-block star"></span>
                             <span class="d-inline-block star"></span>
@@ -254,7 +256,7 @@
                             <span class="d-inline-block star"></span>
                             <span class="d-inline-block star"></span>
                         </div>
-                        <p class="mb-0 darkgrey-text">When I was looking to book my flight to Berlin from LAX, Tripma had the best browsing experiece so I figured I’d give it a try. It was my first time using Tripma, but I’d definitely recommend it to a friend and use it for <a href="#" class="purple-text">read more...</a></p>
+                        <p class="mb-0 ">When I was looking to book my flight to Berlin from LAX, Tripma had the best browsing experiece so I figured I’d give it a try. It was my first time using Tripma, but I’d definitely recommend it to a friend and use it for <a href="#" class="purple-text">read more...</a></p>
                     </div>
                 </div>
             </div>
@@ -262,7 +264,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <nav class="container mb-5 d-lg-flex flex-nowrap justify-content-around align-items-baseline">
+            <nav class="container mb-5 d-lg-flex flex-nowrap justify-content-around">
                 <div class="logo mb-4 me-lg-3 mb-lg-0">
                     <a href="#" class="navbar-brand">
                         <svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,8 +278,8 @@
                         </svg>
                     </a>
                 </div>
-                <div class="mb-3 me-lg-3 mb-lg-0">
-                    <h3 class="fw-bold mb-3  maingrey-text" data-bs-toggle="collapse" data-bs-target="#collapse-about" aria-expanded="false" aria-controls="collapse-about">About</h3>
+                <div class="mb-3 me-lg-3 mb-lg-0 pt-2">
+                    <h3 class="fw-bold mb-3" data-bs-toggle="collapse" data-bs-target="#collapse-about" aria-expanded="false" aria-controls="collapse-about">About</h3>
                     <ul class="collapse navbar-nav" id="collapse-about">
                         <li class="nav-item">
                             <a href="#" class="nav-link py-0 mb-2">About Tripma</a>
@@ -299,8 +301,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mb-3 me-lg-3 mb-lg-0">
-                    <h3 class="fw-bold mb-3  maingrey-text" data-bs-toggle="collapse" data-bs-target="#collapse-partner" aria-expanded="false" aria-controls="collapse-partner">Partner with us</h3>
+                <div class="mb-3 me-lg-3 mb-lg-0 pt-2">
+                    <h3 class="fw-bold mb-3" data-bs-toggle="collapse" data-bs-target="#collapse-partner" aria-expanded="false" aria-controls="collapse-partner">Partner with us</h3>
                     <ul class="collapse navbar-nav" id="collapse-partner">
                         <li class="nav-item">
                             <a href="#" class="nav-link py-0 mb-2">Partnership programs</a>
@@ -325,8 +327,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mb-3 me-lg-3 mb-lg-0">
-                    <h3 class="fw-bold mb-3  maingrey-text" data-bs-toggle="collapse" data-bs-target="#collapse-support" aria-expanded="false" aria-controls="collapse-support">Support</h3>
+                <div class="mb-3 me-lg-3 mb-lg-0 pt-2">
+                    <h3 class="fw-bold mb-3" data-bs-toggle="collapse" data-bs-target="#collapse-support" aria-expanded="false" aria-controls="collapse-support">Support</h3>
                     <ul class="collapse navbar-nav" id="collapse-support">
                         <li class="nav-item">
                             <a href="#" class="nav-link py-0 mb-2">Help Center</a>
@@ -348,8 +350,8 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="fw-bold mb-3  maingrey-text" data-bs-toggle="collapse" data-bs-target="#collapse-app" aria-expanded="false" aria-controls="collapse-app">Get the app</h3>
+                <div class="pt-2">
+                    <h3 class="fw-bold mb-3" data-bs-toggle="collapse" data-bs-target="#collapse-app" aria-expanded="false" aria-controls="collapse-app">Get the app</h3>
                     <ul class="collapse navbar-nav" id="collapse-app">
                         <li class="nav-item">
                             <a href="#" class="nav-link py-0 mb-2">Tripma for Android</a>

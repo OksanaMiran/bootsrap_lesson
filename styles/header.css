@@ -1,0 +1,15 @@
+.header {
+    background-color: #fff;
+    top: 0;
+}
+
+.nav-item:hover .nav-link,
+.nav-item:focus .nav-link,
+.nav-item:focus-visible .nav-link {
+    color: #5d7eec;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show {
+    color: #605DEC;
+}

@@ -1,0 +1,152 @@
+.hero-section h1 {
+    font-weight: 800;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:focus-visible {
+    background-color: #5d7eec;
+    border-color: #5d7eec;
+}
+
+.hero-section {
+    height: 700px;
+}
+
+.hero-background {
+    z-index: -1;
+}
+
+.hero-heading {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 800;
+    background-image: url('../images/Group\ 8.png');
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.form-ico {
+    top: 8px;
+    left: 22px;
+    font-size: 28px;
+}
+
+.watch-all {
+    border: none;
+    outline: 0;
+    background: none;
+    color: #A1B0CC;
+}
+
+.watch-all:hover,
+.watch-all:focus,
+.watch-all:focus-visible {
+    color: #605DEC;
+}
+
+.cards-wrapper {
+    margin-bottom: 120px;
+}
+
+.cards-wrapper h2 {
+    font-weight: 700;
+    color: #6E7491;
+}
+
+.cards-wrapper .image-holder {
+    height: 397px;
+}
+
+.card-holder {
+    box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
+}
+
+.card-container h3,
+.card-container .price {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #6E7491;
+}
+
+.card-container p {
+    color: #7C8DB0;
+}
+
+.price::before {
+    content: '$';
+}
+
+.comment-container {
+    margin-bottom: 200px;
+}
+
+.comment-container h2 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.comment-container p {
+    color: #27273F;
+}
+
+.comment-container .image-holder {
+    width: 48px;
+    height: 48px;
+}
+
+.star {
+    background-image: url('../images/Star-fill.svg');
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+}
+
+.star-nofill {
+    background-image: url('../images/Star-nofill.svg');
+}
+
+@media (min-width: 992px) {
+    .hero-section h1 {
+        font-size: 96px;
+        line-height: 90px;
+        max-width: 756px;
+    }
+    .input-where,
+    .input-to,
+    .input-date {
+        border-right: none;
+    }
+
+    .input-where {
+        border-radius: var(--bs-border-radius) 0 0 var(--bs-border-radius);
+    }
+
+    .input-to {
+        border-radius: 0 0 0 0;
+    }
+
+    .input-date { 
+        border-radius: 0 0 0 0;
+    }
+
+    .input-person {
+        border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0;
+    }
+
+    .form-ico {
+        left: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .input-person {
+        border-right: 0;
+        border-radius: 0 0 0 0;
+    }
+    
+    .input-search {
+        border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0;
+    }
+}
