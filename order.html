@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/order.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/properties.css">
@@ -53,7 +54,112 @@
     </header>
     <main class="main">
         <div class="container">
-            
+            <div class="row">
+                <div class="col-7">
+                    <h1>Passenger information</h1>
+                    <p>Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</p>
+                </div>
+            </div>
+            <div>
+                <form action="#">
+                    <div>
+                        <h2>Passenger 1 (Adult)</h2>
+                        <div>
+                            <input type="text" name="first-name" id="first-name" placeholder="First name*">
+                            <input type="text" name="middle" id="middle" placeholder="Middle">
+                            <input type="text" name="last-name" id="last-name" placeholder="Last name*">
+                            <input type="text" name="suffix" id="suffix" placeholder="Suffix">
+                            <label for="bitrh">
+                                <input type="date" name="bitrh" id="bitrh" placeholder="Date of birth*">
+                                <span>MM/DD/YY</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="email" name="mail" id="mail" placeholder="Email address*">
+                            <input type="tel" name="tel" id="tel" placeholder="Phone number*">
+                            <input type="number" name="redress" id="redress" placeholder="Redress number">
+                            <input type="number" name="treveler-number" id="treveler-number" placeholder="Known traveller number*">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Emergency contact information</h2>
+                        <div>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Same as Passenger 1</label>
+                            <input type="text" name="emergency-first-name" id="emergency-first-name" placeholder="First name*">
+                            <input type="text" name="emergency-last-name" id="emergency-last-name" placeholder="Last name*">
+                            <input type="text" name="emergency-mail" id="emergency-mail" placeholder="Email address*">
+                            <input type="text" name="emergency-tel" id="emergency-tel" placeholder="Phone number*">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Bag information</h2>
+                        <p>Each passenger is allowed one free carry-on bag and one personal item. First checked bag for each passenger is also free. Second bag check fees are waived for loyalty program members. See the full bag policy.</p>
+                        <div>
+                            <div>
+                                <span>Passenger 1</span>
+                                <span>First Last</span>
+                            </div>
+                            <div>
+                                <span>Checked bags</span>
+                                <div>
+                                    <button></button>
+                                    <span></span>
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Save and close">
+                        <button>Save and close</button>
+                    </div>
+                </form>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <img src="images/havaii-air.png" alt="">
+                                <div>
+                                    <span>Hawaiian Airlines</span>
+                                    <span>FIG4312</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>16h 45m (+1d)</span>
+                                <span>7:00 AM - 4:15 PM</span>
+                                <span>2h 45m in HNL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="images/havaii-air.png" alt="">
+                                <div>
+                                    <span>Hawaiian Airlines</span>
+                                    <span>FIG4312</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>16h 45m (+1d)</span>
+                                <span>7:00 AM - 4:15 PM</span>
+                                <span>2h 45m in HNL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Subtotal</span>
+                        <span>$503</span>
+                        <span>Taxes and Fees</span>
+                        <span>$121</span>
+                        <span>Total</span>
+                        <span>$624</span>
+                    </div>
+                    <div>
+                        <img src="images/Illustration with text.png" alt="">
+                        <span>*Dimensions include handles and wheels</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
