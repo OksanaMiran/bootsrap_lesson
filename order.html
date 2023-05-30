@@ -55,42 +55,44 @@
     </header>
     <main class="main">
         <div class="container">
-            <div class="mb-5">
-                <h1 class="fs-4 purple-text fw-bold">Passenger information</h1>
-                <p>Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</p>
+            <div class="mb-5 row">
+                <div class="col-xl-7">
+                    <h1 class="fs-4 purple-text fw-bold">Passenger information</h1>
+                    <p>Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</p>
+                </div>
             </div>
-            <div>
-                <form action="#" class="passenger-form">
+            <div class="row">
+                <form action="#" class="col-12 col-lg-6 col-xl-7 passenger-form">
                     <div class="mb-5">
                         <h2 class="fw-semibold mb-4">Passenger 1 (Adult)</h2>
                         <div class="row">
-                            <label for="first-name" class="mb-3 col-12 col-md-6">
+                            <label for="first-name" class="mb-3 col-12 col-md-6 col-xl-4">
                                 <input type="text" name="first-name" id="first-name" placeholder="First name*" class="form-control py-2">
                             </label>
-                            <label for="middle" class="mb-3 col-12 col-md-6">
+                            <label for="middle" class="mb-3 col-12 col-md-6 col-xl-4">
                                 <input type="text" name="middle" id="middle" placeholder="Middle" class="form-control py-2">
                             </label>
-                            <label for="last-name" class="mb-3 col-12 col-md-6">
+                            <label for="last-name" class="mb-3 col-12 col-md-6 col-xl-4">
                                 <input type="text" name="last-name" id="last-name" placeholder="Last name*" class="form-control py-2">
                             </label>
-                            <label for="suffix" class="mb-3 col-12 col-md-6">
+                            <label for="suffix" class="mb-3 col-12 col-md-6 col-xl-4">
                                 <input type="text" name="suffix" id="suffix" placeholder="Suffix" class="form-control py-2">
                             </label>
-                            <label for="bitrh" class="mb-3 col-12 col-md-6">
+                            <label for="bitrh" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="date" name="bitrh" id="bitrh" placeholder="Date of birth*" class="form-control py-2">
                                 <span class="ms-1 date-type">MM/DD/YY</span>
                             </label>
                         </div>
                         <div class="row">
-                            <label for="mail" class="mb-3 col-12 col-md-">
+                            <label for="mail" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="email" name="mail" id="mail" placeholder="Email address*" class="form-control py-2">
                             </label>
-                            <label for="tel" class="mb-3 col-12 col-md-">
+                            <label for="tel" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="tel" name="tel" id="tel" placeholder="Phone number*" class="form-control py-2">
                             </label>
-                            <label for="redress" class="mb-3 col-12 col-md-">
+                            <label for="redress" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="number" name="redress" id="redress" placeholder="Redress number" class="form-control py-2"></label>
-                            <label for="treveler-number" class="mb-3 col-12 col-md-">
+                            <label for="treveler-number" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="number" name="treveler-number" id="treveler-number" placeholder="Known traveller number*" class="form-control py-2"></label>
                         </div>
                     </div>
@@ -99,16 +101,16 @@
                         <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label mb-3" for="flexCheckDefault">Same as Passenger 1</label>
                         <div class="row">
-                            <label for="" class="mb-3 col-12 col-md-6">
+                            <label for="" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="text" name="emergency-first-name" id="emergency-first-name" placeholder="First name*" class="form-control py-2">
                             </label>
-                            <label for="" class="mb-3 col-12 col-md-6">
+                            <label for="" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="text" name="emergency-last-name" id="emergency-last-name" placeholder="Last name*" class="form-control py-2">
                             </label>
-                            <label for="" class="mb-3 col-12 col-md-6">
+                            <label for="" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="text" name="emergency-mail" id="emergency-mail" placeholder="Email address*" class="form-control py-2">
                             </label>
-                            <label for="" class="mb-3 col-12 col-md-6">
+                            <label for="" class="mb-3 col-12 col-md-6 col-xl-5">
                                 <input type="text" name="emergency-tel" id="emergency-tel" placeholder="Phone number*" class="form-control py-2"></label>
                         </div>
                     </div>
@@ -131,7 +133,7 @@
                         <button disabled class="btn py-2 px-3">Select seats</button>
                     </div>
                 </form>
-                <div class="order-info">
+                <div class="col-12 col-lg-6 col-xl-5 order-info">
                     <div class="border rounded-4 px-3 py-4 mb-4 ms-auto order-data">
                         <div class="border-bottom pb-4 d-flex justify-content-between">
                             <div class="d-flex flex-nowrap">
@@ -178,7 +180,7 @@
                             <span class="d-block fw-semibold info-main">$624</span>
                         </div>
                     </div>
-                    <div class="text-end mb-5">
+                    <div class="text-end mb-5 order-button">
                         <button disabled class="btn py-2 px-3">Select seats</button>
                     </div>
                     <div class="order-img mx-auto">
@@ -301,10 +303,10 @@
         <div class="border-top">
             <div class="container py-4 d-flex align-items-center">
                 <ul class="navbar-nav flex-row">
-                    <li class="nav-item me-2">
+                    <li class="nav-item me-3">
                         <a href="" class="nav-link icon-twitter fs-5"></a>
                     </li>
-                    <li class="nav-item me-2">
+                    <li class="nav-item me-3">
                         <a href="" class="nav-link icon-instagram fs-5"></a>
                     </li>
                     <li class="nav-item me-2">

@@ -30,7 +30,8 @@
     height: 32px;
     background-color: #FAFAFA;
     border: none;
-    border-radius: 2px;
+    border-radius: 4px;
+    transition-duration: 0.3s;
 }
 
 .button-bags::before {
@@ -51,9 +52,24 @@
     border-left: 2px solid #605DEC;
 }
 
+.button-bags:hover,
+.button-bags:focus,
+.button-bags:focus-visible {
+    box-shadow: inset 0 0 2px #7C8DB0;
+}
+
 .btn-inverse {
     background-color: #fff;
     color: #605DEC;
+}
+
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:focus-visible {
+    background-color: #fff;
+    color: #605DEC;
+    border: 1px solid #605DEC;
+    box-shadow: inset 0 0 3px #605DEC;
 }
 
 .order-info {
@@ -75,4 +91,10 @@
 
 .order-img {
     max-width: 382px;
+}
+
+@media (min-width: 992px) {
+    .order-button {
+        margin-bottom: 100px !important;
+    }
 }
